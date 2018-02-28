@@ -1,18 +1,31 @@
 //Starship Arena - Created on 1/11/17 by Nathan Purwosumarto
 //Example of LWJGL 3, displays ships that move randomly in the window
 
-//ANGLE SYSTEM (DO NOT DELETE THESE, DUJIN NEEDS THESE FOR REFERENCE):
-//I find these comments very useful, will not delete
-//			 0
-//		  90 + 270
-//		    180
-//Up is 0 degrees, and increases counter clockwise
-//Standard/Java angle system:
-//
-//			90
-//		 180 + 0
-//		   270
-//Right is 0 degrees, and increases counter clockwise
+
+/** 
+ * ANGLE SYSTEM
+ * 
+ * Our angle system:
+ * 			 0
+ * 		  90 + 270
+ * 		    180
+ * Up is 0 degrees, and increases counter clockwise
+ * 
+ * Standard/Java angle system:
+ * 			90
+ * 		 180 + 0
+ * 		   270
+ * Right is 0 degrees, and increases counter clockwise
+ * 
+ * 
+ * TO RENDER ANY TEXTURE:
+ * Just 3 lines are needed
+ * gamerenderer.loadTexture(texId); //Look inside the GameTextures file to figure out texID
+ * gamerenderer.setTextureCoords(0, 0, 1, 1);
+ * gamerenderer.setModel(WINDOW_WIDTH - 50, WINDOW_HEIGHT - 2, WINDOW_WIDTH - 2, WINDOW_HEIGHT - 50); //Find screen coordinates
+ * 
+ * 
+ */
 
 /**
  * USEFUL SHORTCUTS/FUNCTIONS
